@@ -1,4 +1,4 @@
-#include "VSWindowsVC++¶Ô»°¿ò·¶Ê½.h"
+#include "VSWindowsVC++å¯¹è¯æ¡†èŒƒå¼.h"
 #include <iostream>
 BOOL BasicModalDialog::Init(HINSTANCE hInstance, LPCTSTR c_lpszTemplateName, HWND hWndParent)
 {
