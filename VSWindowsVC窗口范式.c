@@ -1,7 +1,6 @@
 
 
-#include "framework.h"
-#include "resource.h"
+#include "Win32Basic.h"
 
 #define MAX_LOADSTRING 100
 
