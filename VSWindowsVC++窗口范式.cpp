@@ -1,4 +1,4 @@
-#include "BasicWindow.h"
+#include "VSWindowsVC++窗口范式.h"
 
 BOOL BasicWindow::Init
 (
@@ -33,7 +33,7 @@ BOOL BasicWindow::Init
 
 BOOL BasicWindow::InitInstance(HINSTANCE hInstance, int nCmdShow, int x, int y, int cx, int cy, DWORD dwStyle, LPCTSTR c_lpszWndClassName, LPCTSTR c_lpszWndTitle)
 {
-    m_hInst = hInstance;  //将实例句柄存储在全局变量中
+    m_hInst = hInstance;  //将实例句柄存储在成员变量中
 
     HWND hWnd = CreateWindow(c_lpszWndClassName, c_lpszWndTitle, dwStyle,
         x, y, cx, cy, NULL, NULL, hInstance, this); 
@@ -43,7 +43,7 @@ BOOL BasicWindow::InitInstance(HINSTANCE hInstance, int nCmdShow, int x, int y, 
         return FALSE;
     }
 
-    m_hWnd = hWnd;    //将主窗口句柄存储在全局变量中
+    m_hWnd = hWnd;    //将主窗口句柄存储在成员变量中
 
     ShowWindow(hWnd, nCmdShow);
     UpdateWindow(hWnd);
